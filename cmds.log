@@ -1,0 +1,238 @@
+    1  exit
+    2  passwd 
+    3  exit
+    4  lscpu
+    5  top
+    6  df -h
+    7  free -h
+    8  exit
+    9  ls
+   10  ls -d */
+   11  pwd
+   12  cd
+   13  cd /
+   14  cd ~/Desktop
+   15  pwd
+   16  cd ~
+   17  mkdir /tmp/tutorial
+   18  cd /tmp/tutorial
+   19  mkdir dir1 dir2 dir3
+   20  ls
+   21  mkdir -p dir4/dir5/dir6
+   22  ls
+   23  cd dir4
+   24  ls
+   25  cd dir5
+   26  ls
+   27  cd ../..
+   28  mkdir "folder 1"
+   29  mkdir 'folder 2'
+   30  mkdir folder\ 3
+   31  mkdir "folder 4" "folder 5"
+   32  mkdir - "folder 6"/"folder 7"
+   33  mkdir -p "folder 6"/"folder 7"
+   34  ls
+   35  cd folder\ 6
+   36  ls
+   37  cd ../..
+   38  cd tutorial
+   39  ls
+   40  ls > output.txt
+   41  ls
+   42  cat output.txt
+   43  echo "This is a test"
+   44  echo "This is a test" > test_1.txt
+   45  echo "This is a second test" > test_2.txt
+   46  ls
+   47  cat test_1.txt
+   48  cat test_2.txt
+   49  cat test_1.txt
+   50  cat test_1.txt test_2.txt 
+   51  cat test_?.txt
+   52  cat test_*
+   53  mkdir myproject
+   54  cd myproject/
+   55  git init
+   56  touch newfile.txt
+   57  ls
+   58  git status
+   59  ls
+   60  pwd
+   61  cd ../..
+   62  ls
+   63  cd home
+   64  ls
+   65  cd
+   66  cd ~
+   67  wget https://s3.amazonaws.com/amazon-reviews-pds/tsv/amazon_reviews_us_Books_v1_02.tsv.gz
+   68  mkdir worksheet1
+   69  rm worksheet1
+   70  rmdir worksheet1
+   71  rm -r worksheet1
+   72  ls
+   73  mkdir worksheet1
+   74  cd worksheet1/
+   75  git init
+   76  history > cmds.log
+   77  ls
+   78  git status
+   79  git add cmds.log 
+   80  git status
+   81  git commit -m "This first commit contains a log file of my command history."
+   82  git config --global user.email "jennifer.benbow@sjsu.edu"
+   83  mkdir worksheet1
+   84  cd worksheet1/
+   85  cd ~
+   86  ls
+   87  cd worksheet1/
+   88  git init
+   89  cd ..
+   90  ls
+   91  mkdir myproject
+   92  cd myproject
+   93  git init
+   94  touch jbenbow.txt
+   95  ls
+   96  git status
+   97  git add jbenbow.txt 
+   98  git status
+   99  git commit -m "First commit in the tutorial."
+  100  git config --global user.email "jennifer.benbow@sjsu.edu"
+  101  git config --global user.name "Jennifer Benbow"
+  102  git commit -m "First commit in the tutorial."
+  103  git remote add origin https://github.com/jenbow/newrepo.git
+  104  git branch -M main
+  105  git push -u origin main
+  106  git pull origin master
+  107  git status
+  108  git pull origin main
+  109  cd ..
+  110  mkdir ws1
+  111  cd ws1/
+  112  git init
+  113  history > cmds.log
+  114  git status
+  115  git add cmds.log 
+  116  git commit -m "Initial commit for Worksheet 1."
+  117  git remote add origin https://github.com/jenbow/ws1.git
+  118  git branch -M main
+  119  git push -u origin main
+  120  git config user.password "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"
+  121  exit
+  122  ls
+  123  gunzip amazon_reviews_us_Books_v1_02.tsv.gz 
+  124  ls ..
+  125  head amazon_reviews_us_Books_v1_02.tsv 
+  126  ls -lt
+  127  head amazon_reviews_us_Books_v1_02.tsv | cut -f 12
+  128  cut -f 12 amazon_reviews_us_Books_v1_02.tsv | grep Y | wc -l
+  129  cut -f 12 amazon_reviews_us_Books_v1_02.tsv | grep Y | wc -l > counts.txt
+  130  cut -f 12 amazon_reviews_us_Books_v1_02.tsv | grep N | wc -l >> counts.txt
+  131  nano counts.txt 
+  132  cat counts.txt 
+  133  mkdir ws2
+  134  mv counts.txt ws2/
+  135  cd ws2/
+  136  ls
+  137  git init
+  138  history | tail -n 13 > cmds.log
+  139  ls
+  140  cat cmds.log 
+  141  history | tail -n 20 > cmds.log
+  142  cat cmds.log 
+  143  git remote add origin https://github.com/jenbow/ws2.git
+  144  git branch -M main
+  145  git status
+  146  git branch -M master
+  147  git add cmds.log counts.txt 
+  148  git commit -m "Worksheet 2 command log."
+  149  git remote add origin https://github.com/jenbow/ws2.git
+  150  git branch -M master
+  151  git push
+  152  git push origin master
+  153  git config --list
+  154  echo $HOME
+  155  id -u benbow
+  156  id -G benbow
+  157  id benbow
+  158  mkdir temp
+  159  chmod -x temp
+  160  ls -l
+  161  touch temp/test.txt
+  162  cd temp/
+  163  ls temp
+  164  ls -l temp
+  165  mv temp temp2
+  166  cp temp2 temp2-copy
+  167  cp -r temp2 temp2-copy
+  168  ls /proc/ | grep "mem"
+  169  ls /proc/ | grep "cpu"
+  170  head /proc/meminfo 
+  171  tail /proc/cpuinfo 
+  172  ls -lh ../amazon_reviews_us_Books_v1_02.tsv 
+  173  grep -c "great" ../amazon_reviews_us_Books_v1_02.tsv 
+  174  grep "great" ../amazon_reviews_us_Books_v1_02.tsv | wc -l
+  175  ls
+  176  mkdir a1
+  177  rmdir a1
+  178  mkdir a1
+  179  cd a1
+  180  script a1.txt
+  181  nano a1.txt 
+  182  lscpu 
+  183  tail -n 20 /proc/cpuinfo 
+  184  nano a1.txt 
+  185  uname -p
+  186  nano a1.txt 
+  187  ls
+  188  ls temp2
+  189  ls temp2-copy/
+  190  rmdir temp2 temp2-copy/
+  191  ls
+  192  exit
+  193  ls
+  194  ls sample.txt
+  195  ls
+  196  cd a1
+  197  ls
+  198  script sample.txt
+  199  less sample.txt 
+  200  ls -l
+  201  ls -lh
+  202  grep -c "Great" amazon_reviews_us_Books_v1_02.tsv 
+  203  grep -c -i "great" amazon_reviews_us_Books_v1_02.tsv 
+  204  cd a1
+  205  less a1.txt 
+  206  nano a1.txt 
+  207  cd ..
+  208  mv a1/ b1
+  209  ls
+  210  git clone https://github.com/jenbow/a1.git
+  211  ls
+  212  ls b1
+  213  mv b1/a1.txt a1/
+  214  ls a1
+  215  rmdir b1/
+  216  ls
+  217  cd a1
+  218  git status
+  219  git add a1.txt 
+  220  git commit -m "Homework 1 upload"
+  221  git push
+  222  head ../amazon_reviews_us_Books_v1_02.tsv 
+  223  head ../amazon_reviews_us_Books_v1_02.tsv | sort -k 2
+  224  head ../amazon_reviews_us_Books_v1_02.tsv | cut -f 2 | sort
+  225  head ../amazon_reviews_us_Books_v1_02.tsv | cut -f 2 | sort | uniq -c
+  226  head -n 50 ../amazon_reviews_us_Books_v1_02.tsv | cut -f 2 | sort | uniq -c
+  227  head -n 50 ../amazon_reviews_us_Books_v1_02.tsv | cut -f 2 | sort | uniq -c | sort -k 1
+  228  head -n 50 ../amazon_reviews_us_Books_v1_02.tsv | cut -f 2 | sort | uniq -c | sort -k 1 -n -r 
+  229  head -n 50 ../amazon_reviews_us_Books_v1_02.tsv | cut -f 2 | sort | uniq -c | sort -nrk 1
+  230  cut -f 2 ../amazon_reviews_us_Books_v1_02.tsv | sort | uniq -c | sort -nrk 1 | head -n 3
+  231  head -n 1 ../amazon_reviews_us_Books_v1_02.tsv 
+  232  cut -f 4 ../amazon_reviews_us_Books_v1_02.tsv | sort | uniq -c | sort -nrk 1 | head -n 3
+  233  head -n 1 ../amazon_reviews_us_Books_v1_02.tsv 
+  234  head -n 1 ../amazon_reviews_us_Books_v1_02.tsv | cut -f 9
+  235  cut -f 9 ../amazon_reviews_us_Books_v1_02.tsv | tail -n +2 | sort | uniq -c | sort -nrk 1
+  236  cut -f 9 ../amazon_reviews_us_Books_v1_02.tsv | sort | uniq -c | sort -nk 2
+  237  head -n 1 ../amazon_reviews_us_Books_v1_02.tsv
+  238  history > cmds.log
